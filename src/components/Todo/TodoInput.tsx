@@ -14,9 +14,7 @@ function TodoInput(props: IProps) {
         <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
         <button
           className={'ml-2 rounded-xl bg-amber-200 p-2'}
-          onClick={() => {
-            setTodos([text,...todos])
-          }}
+          onClick={() => setTodos([text,...todos])}
         >
           Add
         </button>
